@@ -5,6 +5,9 @@ package ex2;
  */
 public class LivretA extends CompteBancaire {
 
+	/** tauxRemuneration : taux de rémunération dans le cas d'un livret A */
+	private double tauxRemuneration;
+
 	/**
 	 * Constructeur pour un livret A.
 	 *
@@ -22,5 +25,23 @@ public class LivretA extends CompteBancaire {
 	 */
 	public void appliquerRemuAnnuelle() {
 		this.solde += this.solde * this.tauxRemuneration / 100;
+	}
+
+	/**
+	 * Getter for tauxRemuneration.
+	 *
+	 * @return the tauxRemuneration
+	 */
+	public double getTauxRemuneration() {
+		return tauxRemuneration;
+	}
+
+	/**
+	 * Setter for tauxRemuneration.
+	 *
+	 * @param tauxRemuneration the tauxRemuneration to set
+	 */
+	public void setTauxRemuneration(double tauxRemuneration) {
+		this.tauxRemuneration = tauxRemuneration;
 	}
 }

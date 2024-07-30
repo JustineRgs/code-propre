@@ -12,9 +12,6 @@ public class CompteBancaire {
 	/** decouvert : un découvert est autorisé seulement pour les comptes courants */
 	protected double decouvert;
 
-	/** tauxRemuneration : taux de rémunération dans le cas d'un livret A */
-	protected double tauxRemuneration;
-
 	/** Le type vaut soit CC=Compte courant, soit LA=Livret A */
 	protected String type;
 
@@ -90,24 +87,6 @@ public class CompteBancaire {
 	 */
 	public void setDecouvert(double decouvert) {
 		this.decouvert = decouvert;
-	}
-
-	/**
-	 * Getter for tauxRemuneration.
-	 *
-	 * @return the tauxRemuneration
-	 */
-	public double getTauxRemuneration() {
-		return tauxRemuneration;
-	}
-
-	/**
-	 * Setter for tauxRemuneration.
-	 *
-	 * @param tauxRemuneration the tauxRemuneration to set
-	 */
-	public void setTauxRemuneration(double tauxRemuneration) {
-		this.tauxRemuneration = tauxRemuneration;
 	}
 
 	/**
